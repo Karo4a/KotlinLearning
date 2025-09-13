@@ -1,6 +1,6 @@
 package basics
 
-fun second() {
+fun task2() {
     println("Программа подсчитывает количество различных символов во введенной строке.")
     print("Введите строку: ")
     val input = readln()

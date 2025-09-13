@@ -1,6 +1,6 @@
 package basics
 
-fun third() {
+fun task3() {
     println("Программа преобразует введенное пользователем натуральное число из 10-ичной системы в двоичную.")
     print("Введите число: ")
     val input = readln().toIntOrNull()

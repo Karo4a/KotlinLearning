@@ -23,12 +23,12 @@ fun main() {
                 if (choice != null) {
                     println()
                     when (choice) {
-                        1 -> basics.first()
-                        2 -> basics.second()
-                        3 -> basics.third()
-                        4 -> basics.fourth()
-                        5 -> basics.fifth()
-                        6 -> basics.sixth()
+                        1 -> basics.task1()
+                        2 -> basics.task2()
+                        3 -> basics.task3()
+                        4 -> basics.task4()
+                        5 -> basics.task5()
+                        6 -> basics.task6()
                         else -> {
                             print("Неправильный выбор задачи.")
                         }

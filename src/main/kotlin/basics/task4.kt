@@ -1,6 +1,6 @@
 package basics
 
-fun fourth() {
+fun task4() {
     println("Программа является калькулятором. Формат ввода: ЧИСЛО1 ЧИСЛО2 ОПЕРАЦИЯ.")
     print("Введите число: ")
     val (strA, strB, operation) = readln().split(" ", limit=4)
@@ -12,7 +12,9 @@ fun fourth() {
                 "+" -> println("Результат = ${numA + numB}")
                 "-" -> println("Результат = ${numA - numB}")
                 "*" -> println("Результат = ${numA * numB}")
-                "/" -> println(if (numB == 0) "Деление на ноль!" else "Результат = ${numA / numB}")
+                "/" -> println(
+                    if (numB == 0) "Деление на ноль!"
+                    else "Результат = ${numA / numB}")
                 else -> println("Операция имеет некорректный ввод.")
             }
         } else {
