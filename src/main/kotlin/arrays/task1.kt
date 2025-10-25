@@ -7,16 +7,18 @@ fun task1() {
     println("Ручной ввод чисел в матрицу!")
 
     print("Количество строк в матрице: ")
-    val sizeRows = readln().toUIntOrNull()
-    if (sizeRows != null) {
+    val sizeRowsU = readln().toUIntOrNull()
+    if (sizeRowsU != null) {
+        val sizeRows = sizeRowsU.toInt()
         print("Количество столбцов в матрице: ")
-        val sizeCols = readln().toUIntOrNull()
-        if (sizeCols != null) {
+        val sizeColsU = readln().toUIntOrNull()
+        if (sizeColsU != null) {
+            val sizeCols = sizeColsU.toInt()
             println("Вводите только трехзначные числа!")
-            val matrix = arrayOfNulls<Array<Int?>>(sizeRows.toInt())
-            for (i in 0 until sizeRows.toInt()) {
-                val row = arrayOfNulls<Int>(sizeCols.toInt())
-                for (j in 0 until sizeCols.toInt()) {
+            val matrix = arrayOfNulls<Array<Int?>>(sizeRows)
+            for (i in 0 until sizeRows) {
+                val row = arrayOfNulls<Int?>(sizeCols)
+                for (j in 0 until sizeCols) {
                     var inputEl : Int?
                     do {
                         print("arr[$i][$j] = ")
@@ -31,7 +33,7 @@ fun task1() {
                 matrix[i] = row
             }
 
-            val typedMatrix = matrix.map{ row -> row.orEmpty()}.orEmpty().toTypedArray()
+            val typedMatrix = matrix.map{ row -> row.orEmpty()}.toTypedArray()
             typedMatrix.forEach { row -> println(row.joinToString(" ")) }
             val countOfUniqueDigits = typedMatrix.flatten().joinToString("").toSet().size
             println("В матрице используется $countOfUniqueDigits различных цифр")
