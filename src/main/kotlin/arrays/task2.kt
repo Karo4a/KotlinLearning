@@ -19,7 +19,7 @@ fun task2() {
                 do {
                     print("arr[$i][$j] = ")
                     inputEl = readln().toIntOrNull()
-                    val isValid = inputEl != null && abs(inputEl) in 1..9
+                    val isValid = inputEl != null && abs(inputEl) in 0..9
                     if (!isValid) {
                         println("Введите корректное однозначное число!")
                     }
