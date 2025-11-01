@@ -10,7 +10,7 @@ fun task4() {
 
     println("Заполним первый массив целыми числами. Пустая строка - конец ввода массива")
     do {
-        print("Элемент ${firstList.size} = ")
+        print("Элемент ${firstList.size+1} = ")
         val input = readln()
         val inputInt = input.toIntOrNull()
 
@@ -24,7 +24,7 @@ fun task4() {
 
     println("Заполним второй массив целыми числами. Пустая строка - конец ввода массива")
     do {
-        print("Элемент ${secondList.size} = ")
+        print("Элемент ${secondList.size+1} = ")
         val input = readln()
         val inputInt = input.toIntOrNull()
 

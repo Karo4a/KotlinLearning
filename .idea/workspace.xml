@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="finish task4 in arrays">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task3.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task5.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1761396400268</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="finish task4 in arrays">
+      <created>1761990036109</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761990036109</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

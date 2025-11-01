@@ -35,17 +35,19 @@ fun task2() {
             for (j in i+1..matrix.lastIndex) {
                 if (typedMatrix[i][j] != typedMatrix[j][i]) {
                     isSymmetric = false
-                    break;
+                    break
                 }
             }
             if (!isSymmetric) {
-                break;
+                break
             }
         }
 
         typedMatrix.forEach { row -> println(row.joinToString(" ")) }
         println(if(isSymmetric) "Матрица симметрична относительно главной диагонали"
                 else "Матрица не симметрична относительно главной диагонали")
+        print("Продолжить на Enter...")
+        readln()
     } else {
         println("Некорректный ввод размера квадратной матрицы!")
     }
