@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="add pauses to end in arrays">
+    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="fix 0 in task2 in arrays">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task3.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task4.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task5.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/infrastructure/Task.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/infrastructure/Topic.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/topics.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,26 +62,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Kotlin.KotlinLearning.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/1061-23/IdeaProjects/KotlinLearning/src/main/kotlin/arrays&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Kotlin.KotlinLearning.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/1061-23/IdeaProjects/KotlinLearning/src/main/kotlin/classses_intro"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\1061-23\IdeaProjects\KotlinLearning\src\main\kotlin\classses_intro" />
       <recent name="C:\Users\1061-23\IdeaProjects\KotlinLearning\src\main\kotlin\arrays" />
       <recent name="C:\Users\1061-23\IdeaProjects\KotlinLearning\src\main\kotlin\basics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\1061-23\IdeaProjects\KotlinLearning\src\main\kotlin" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="Infrastructure" />
     </key>
   </component>
   <component name="RunManager">
@@ -172,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1761990334232</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix 0 in task2 in arrays">
+      <created>1761991835723</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1761991835723</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -186,6 +205,7 @@
     <MESSAGE value="start task5 in arrays" />
     <MESSAGE value="finish task4 in arrays" />
     <MESSAGE value="add pauses to end in arrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pauses to end in arrays" />
+    <MESSAGE value="fix 0 in task2 in arrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix 0 in task2 in arrays" />
   </component>
 </project>
