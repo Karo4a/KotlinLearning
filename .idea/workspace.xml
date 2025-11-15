@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="refactor menu system for better scalability&#10;add empty classes_intro tasks">
+    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="finish task1 in classes_intro&#10;add pressToContinue function after pass any task&#10;fix typo in main">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/common/functions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task4.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/arrays/task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/arrays/task5.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="package-info" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -49,24 +58,23 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="32JxRVkNtVoqOP8WOogWeqeLcOX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Kotlin.KotlinLearning.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/1061-23/IdeaProjects/KotlinLearning/src/main/kotlin/classses_intro"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Kotlin.KotlinLearning.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/1061-23/IdeaProjects/KotlinLearning/src/main/kotlin/classses_intro&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\1061-23\IdeaProjects\KotlinLearning\src\main\kotlin\classses_intro" />
@@ -206,6 +214,7 @@
     <MESSAGE value="add pauses to end in arrays" />
     <MESSAGE value="fix 0 in task2 in arrays" />
     <MESSAGE value="refactor menu system for better scalability&#10;add empty classes_intro tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor menu system for better scalability&#10;add empty classes_intro tasks" />
+    <MESSAGE value="finish task1 in classes_intro&#10;add pressToContinue function after pass any task&#10;fix typo in main" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish task1 in classes_intro&#10;add pressToContinue function after pass any task&#10;fix typo in main" />
   </component>
 </project>

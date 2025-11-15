@@ -33,16 +33,37 @@ class Triangle(
     }
 }
 
+fun inputDouble(inputName : String) : Double {
+    var num : Double?
+    do {
+        print("Введите $inputName: ")
+        num = readln().toDoubleOrNull()
+
+        if (num == null) {
+            println("Неправильно! Введите вещественное число.\n")
+        }
+    } while(num == null)
+    return num
+}
+
 fun inputPoint(pointName : String) : Point {
-    return Point(0.0, 0.0)
+    println("Заполним точку $pointName:")
+    return Point(
+        inputDouble("координату x"),
+        inputDouble("координату y")
+    )
 }
 
 fun task1() {
-    val a = Point(2.0,3.0)
-    val b = Point(5.0, 4.0)
-    val c = Point(3.0, 7.5)
+    println("Программа высчитывает находится ли введенная точка внутри произвольного треугольника.\n")
+
+    val a = inputPoint("A")
+    val b = inputPoint("B")
+    val c = inputPoint("С")
     val triangle = Triangle(a, b, c)
 
-    val point = Point(4.0,4.0)
-    println(triangle.isPointInTriangle(point))
+    val point = inputPoint("для проверки её расположения внутри треугольника")
+    println(
+        if (triangle.isPointInTriangle(point)) "Указанная точка находится внутри треугольника "
+        else "Указанная точка лежит вне треугольника")
 }

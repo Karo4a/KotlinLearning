@@ -1,3 +1,5 @@
+import common.pressToContinue
+
 fun main() {
     while (true) {
         println("Сборник программ по Kotlin.")
@@ -15,7 +17,7 @@ fun main() {
 
         val topic = topics.find { topic -> topic.id == topicId}
         if (topic == null) {
-            println("Неправильно выбор темы.\n")
+            println("Неправильный выбор темы.\n")
             continue
         }
         println("\n${topic.name}:")
@@ -36,6 +38,7 @@ fun main() {
             continue
         }
         task.action()
+        pressToContinue()
         println()
     }
 }

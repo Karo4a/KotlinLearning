@@ -37,8 +37,6 @@ fun task1() {
             typedMatrix.forEach { row -> println(row.joinToString(" ")) }
             val countOfUniqueDigits = typedMatrix.flatten().joinToString("").toSet().size
             println("В матрице используется $countOfUniqueDigits различных цифр")
-            print("Продолжить на Enter...")
-            readln()
         } else {
             println("Некорректный ввод количества столбцов!")
         }

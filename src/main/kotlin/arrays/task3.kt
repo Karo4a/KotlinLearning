@@ -38,8 +38,6 @@ fun task3() {
     } else if (choice == 2) {
         decode(inputWord, keyWord)
     }
-    print("Продолжить на Enter...")
-    readln()
 }
 
 fun encode(word : String, keyWord : String) {

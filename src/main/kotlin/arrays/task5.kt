@@ -34,9 +34,6 @@ fun task5() {
         for ((group, wordsInGroup) in wordGroups.entries) {
             println("Группа $group: ${wordsInGroup.joinToString()}")
         }
-        print("Продолжить на Enter...")
-        readln()
-
     } else {
         println("Некорректный ввод!")
     }

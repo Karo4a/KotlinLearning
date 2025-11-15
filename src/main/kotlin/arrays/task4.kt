@@ -47,12 +47,10 @@ fun task4() {
     for ((num, count) in firstDictNumToCount.toSortedMap()) {
         val secondCount = secondDictNumToCount[num]
         if (secondCount != null) {
-            for (i in 0 until min(count, secondCount)) {
+            repeat(min(count, secondCount)) {
                 intersectionResult.add(num)
             }
         }
     }
     println("Пересечение массивов:\n${intersectionResult}")
-    print("Продолжить на Enter...")
-    readln()
 }

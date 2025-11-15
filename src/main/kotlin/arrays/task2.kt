@@ -46,8 +46,6 @@ fun task2() {
         typedMatrix.forEach { row -> println(row.joinToString(" ")) }
         println(if(isSymmetric) "Матрица симметрична относительно главной диагонали"
                 else "Матрица не симметрична относительно главной диагонали")
-        print("Продолжить на Enter...")
-        readln()
     } else {
         println("Некорректный ввод размера квадратной матрицы!")
     }
