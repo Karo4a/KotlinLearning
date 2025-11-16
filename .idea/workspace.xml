@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="distribute classes and functions in classes_intro">
+    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="changed naming of classes in classes_intro">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task2.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763306074751</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="changed naming of classes in classes_intro">
+      <option name="closed" value="true" />
+      <created>1763306737295</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1763306737295</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -227,6 +235,7 @@
     <MESSAGE value="finish task1 in classes_intro&#10;add pressToContinue function after pass any task&#10;fix typo in main" />
     <MESSAGE value="finish task1 in classes_intro&#10;add pressToContinue function after pass any task&#10;fix unused variable in task4 in arrays&#10;fix typo in main" />
     <MESSAGE value="distribute classes and functions in classes_intro" />
-    <option name="LAST_COMMIT_MESSAGE" value="distribute classes and functions in classes_intro" />
+    <MESSAGE value="changed naming of classes in classes_intro" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed naming of classes in classes_intro" />
   </component>
 </project>
