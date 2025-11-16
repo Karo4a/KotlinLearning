@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="finish task1 in classes_intro&#10;add pressToContinue function after pass any task&#10;fix unused variable in task4 in arrays&#10;fix typo in main">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" afterDir="false" />
+    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="distribute classes and functions in classes_intro">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763236861162</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="distribute classes and functions in classes_intro">
+      <option name="closed" value="true" />
+      <created>1763306074751</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1763306074751</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,6 +226,7 @@
     <MESSAGE value="refactor menu system for better scalability&#10;add empty classes_intro tasks" />
     <MESSAGE value="finish task1 in classes_intro&#10;add pressToContinue function after pass any task&#10;fix typo in main" />
     <MESSAGE value="finish task1 in classes_intro&#10;add pressToContinue function after pass any task&#10;fix unused variable in task4 in arrays&#10;fix typo in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish task1 in classes_intro&#10;add pressToContinue function after pass any task&#10;fix unused variable in task4 in arrays&#10;fix typo in main" />
+    <MESSAGE value="distribute classes and functions in classes_intro" />
+    <option name="LAST_COMMIT_MESSAGE" value="distribute classes and functions in classes_intro" />
   </component>
 </project>

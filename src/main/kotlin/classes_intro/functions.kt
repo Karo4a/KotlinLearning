@@ -13,9 +13,9 @@ fun inputDouble(inputName : String) : Double {
     return num
 }
 
-fun inputPoint(pointName : String) : Point {
+fun inputPoint2(pointName : String) : Point2 {
     println("Заполним точку $pointName:")
-    return Point(
+    return Point2(
         inputDouble("координату x"),
         inputDouble("координату y")
     )

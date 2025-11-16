@@ -2,20 +2,20 @@ package classes_intro
 
 import kotlin.math.abs
 
-class Point(val x : Double, val y : Double) {
-    operator fun minus(point: Point): Point {
-        return Point(x - point.x, y - point.y)
+class Point2(val x : Double, val y : Double) {
+    operator fun minus(point: Point2): Point2 {
+        return Point2(x - point.x, y - point.y)
     }
 
-    operator fun plus(point: Point): Point {
-        return Point(x + point.x, y + point.y)
+    operator fun plus(point: Point2): Point2 {
+        return Point2(x + point.x, y + point.y)
     }
 }
 
 class Triangle(
-    private val point1 : Point,
-    private val point2 : Point,
-    private val point3 : Point
+    private val point1 : Point2,
+    private val point2 : Point2,
+    private val point3 : Point2
 ) {
     fun area() : Double {
         val vector21 = point2 - point1
@@ -24,7 +24,7 @@ class Triangle(
         return 0.5 * abs(cross)
     }
 
-    fun isPointInTriangle(point : Point) : Boolean {
+    fun isPointInTriangle(point : Point2) : Boolean {
         val area = this.area()
         val pointArea1 = Triangle(point1, point2, point).area()
         val pointArea2 = Triangle(point1, point3, point).area()
