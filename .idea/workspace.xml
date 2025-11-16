@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="finish task2 in classes_intro&#10;some fixes">
+    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="finish task3 in classes_intro&#10;add predicates to functions in classes_intro">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task4.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/functions.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763307481908</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="finish task3 in classes_intro&#10;add predicates to functions in classes_intro">
+      <option name="closed" value="true" />
+      <created>1763314707570</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1763314707570</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -245,6 +254,7 @@
     <MESSAGE value="distribute classes and functions in classes_intro" />
     <MESSAGE value="changed naming of classes in classes_intro" />
     <MESSAGE value="finish task2 in classes_intro&#10;some fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish task2 in classes_intro&#10;some fixes" />
+    <MESSAGE value="finish task3 in classes_intro&#10;add predicates to functions in classes_intro" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish task3 in classes_intro&#10;add predicates to functions in classes_intro" />
   </component>
 </project>
