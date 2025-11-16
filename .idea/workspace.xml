@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="changed naming of classes in classes_intro">
+    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="finish task2 in classes_intro&#10;some fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task3.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763306737295</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="finish task2 in classes_intro&#10;some fixes">
+      <option name="closed" value="true" />
+      <created>1763307481908</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1763307481908</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -236,6 +244,7 @@
     <MESSAGE value="finish task1 in classes_intro&#10;add pressToContinue function after pass any task&#10;fix unused variable in task4 in arrays&#10;fix typo in main" />
     <MESSAGE value="distribute classes and functions in classes_intro" />
     <MESSAGE value="changed naming of classes in classes_intro" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed naming of classes in classes_intro" />
+    <MESSAGE value="finish task2 in classes_intro&#10;some fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish task2 in classes_intro&#10;some fixes" />
   </component>
 </project>

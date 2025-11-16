@@ -4,7 +4,7 @@ import kotlin.math.abs
 import kotlin.math.pow
 import kotlin.math.sqrt
 
-class Point2(val x : Double, val y : Double) {
+data class Point2(val x : Double, val y : Double) {
     operator fun minus(point: Point2) : Point2 {
         return Point2(x - point.x, y - point.y)
     }
@@ -21,7 +21,7 @@ class Point2(val x : Double, val y : Double) {
     }
 }
 
-class Triangle(
+data class Triangle(
     private val point1 : Point2,
     private val point2 : Point2,
     private val point3 : Point2

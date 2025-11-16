@@ -1,16 +1,35 @@
 package classes_intro
 
-fun inputDouble(inputName : String) : Double {
+fun inputInt(inputName : String,
+             errorString : String = "Введите целое число.",
+             predicate : (Int) -> Boolean = { true }) : Int
+{
+    var num : Int?
+    do {
+        print("Введите $inputName: ")
+        num = readln().toIntOrNull()
+        val condition = num == null || !predicate(num)
+        if (condition) {
+            println("Неправильно! $errorString\n")
+        }
+    } while(condition)
+    return num!!
+}
+
+fun inputDouble(inputName : String,
+                errorString : String = "Введите вещественное число.",
+                predicate : (Double) -> Boolean = { true }) : Double
+{
     var num : Double?
     do {
         print("Введите $inputName: ")
         num = readln().toDoubleOrNull()
-
-        if (num == null) {
-            println("Неправильно! Введите вещественное число.\n")
+        val condition = num == null || !predicate(num)
+        if (condition) {
+            println("Неправильно! $errorString\n")
         }
-    } while(num == null)
-    return num
+    } while(condition)
+    return num!!
 }
 
 fun inputPoint2(pointName : String) : Point2 {
