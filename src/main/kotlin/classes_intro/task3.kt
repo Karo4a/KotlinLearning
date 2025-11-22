@@ -1,11 +1,13 @@
 package classes_intro
 
+import common.roundToString
+
 fun task3() {
     println("Программа высчитывает наименьшее и наибольшее растояние между множеством точек.")
 
     val quantity = inputInt("количество точек",
-        "Введите целое число больше 2.",
-        { it > 2 })
+        "Введите целое число больше 2."
+    ) { it > 2 }
     println()
     val points = mutableListOf<Point2>()
 
@@ -31,9 +33,9 @@ fun task3() {
         }
     }
     val sortedLengths = lengths.toSortedMap()
-    val minLength = sortedLengths.firstEntry()
-    val maxLength = sortedLengths.lastEntry()
+    val minLength = sortedLengths.entries.first()
+    val maxLength = sortedLengths.entries.last()
 
-    println("Минимальное расстояние = ${minLength.key} между ${minLength.value.joinToString(" и ")} ")
-    println("Максимальное расстояние = ${maxLength.key} между ${maxLength.value.joinToString(" и ")} ")
+    println("Минимальное расстояние = ${minLength.key.roundToString(4)} между ${minLength.value.joinToString(" и ")} ")
+    println("Максимальное расстояние = ${maxLength.key.roundToString(4)} между ${maxLength.value.joinToString(" и ")} ")
 }
