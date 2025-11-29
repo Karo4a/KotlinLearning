@@ -1,5 +1,6 @@
 package classes_intro
 
+import classes_intro.classes.Point2
 import common.roundToString
 
 fun task3() {

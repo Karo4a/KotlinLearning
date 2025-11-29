@@ -1,5 +1,7 @@
 package classes_intro
 
+import classes_intro.classes.Circle
+import classes_intro.classes.Triangle
 import common.roundToString
 
 fun task5() {

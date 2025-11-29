@@ -1,5 +1,7 @@
 package classes_intro
 
+import classes_intro.classes.Triangle
+
 fun task1() {
     println("Программа высчитывает находится ли введенная точка внутри произвольного треугольника.\n")
 

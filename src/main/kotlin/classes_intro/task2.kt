@@ -1,5 +1,7 @@
 package classes_intro
 
+import classes_intro.classes.Point2
+
 fun task2() {
     println("Программа высчитывает расстояние между двумя введенными точками.")
 

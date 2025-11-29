@@ -36,4 +36,11 @@ val topics = listOf(
             Task(5, "Задача 5") { classes_intro.task5() },
         )
     ),
+    Topic(
+        id = 4,
+        name = "Поезд",
+        tasks = listOf(
+            Task(1, "Поезд") { train.task1() },
+        )
+    ),
 )

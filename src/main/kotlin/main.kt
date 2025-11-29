@@ -1,4 +1,5 @@
 import common.pressToContinue
+import infrastructure.Task
 
 fun main() {
     while (true) {
@@ -20,22 +21,29 @@ fun main() {
             println("Неправильный выбор темы.\n")
             continue
         }
-        println("\n${topic.name}:")
-        topic.tasks.forEach {task ->
-            println("${task.id} - ${task.name}")
-        }
 
-        print("Выберите задачу: ")
-        val taskId = readln().toIntOrNull()
-        println()
-        if (taskId == null) {
-            println("Некорректный ввод.\n")
-            continue
-        }
-        val task = topic.tasks.find { task -> task.id == taskId }
-        if (task == null) {
-            println("Неправильный выбор задачи.\n")
-            continue
+        var task: Task?
+
+        if (topic.tasks.size == 1) {
+            task = topic.tasks.first()
+        } else {
+            println("\n${topic.name}:")
+            topic.tasks.forEach {
+                println("${it.id} - ${it.name}")
+            }
+
+            print("Выберите задачу: ")
+            val taskId = readln().toIntOrNull()
+            println()
+            if (taskId == null) {
+                println("Некорректный ввод.\n")
+                continue
+            }
+            task = topic.tasks.find { it.id == taskId }
+            if (task == null) {
+                println("Неправильный выбор задачи.\n")
+                continue
+            }
         }
         task.action()
         pressToContinue()

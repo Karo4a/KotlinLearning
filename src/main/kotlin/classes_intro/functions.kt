@@ -1,5 +1,7 @@
 package classes_intro
 
+import classes_intro.classes.Point2
+
 fun inputInt(inputName : String,
              errorString : String = "Введите целое число.",
              predicate : (Int) -> Boolean = { true }) : Int
