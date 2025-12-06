@@ -31,8 +31,8 @@ fun task1() {
             println("Шаг 4 - Отправляем поезд.")
             println("Поезд ${train.route.info()}, состоящий из ${train.carriages.size} вагонов отправлен.")
             println("Вагоны:")
-            for (i in 1..train.carriages.lastIndex) {
-                println("Вагон $i = ${train.carriages[i].info()}")
+            for (i in 0..train.carriages.lastIndex) {
+                println("Вагон ${i+1} = ${train.carriages[i].info()}")
             }
             pressToContinue()
             println()
