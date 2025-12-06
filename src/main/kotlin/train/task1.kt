@@ -1,6 +1,7 @@
 package train
 
 import common.pressToContinue
+import train.classes.Train
 
 fun task1() {
     do {
@@ -8,9 +9,9 @@ fun task1() {
         println("Вы хотите составить поезд? EXIT чтобы выйти.")
         print("Ввод = ")
         val input = readln()
-        println()
 
         if (input != "EXIT") {
+            println()
             val train = Train()
 
             println("Шаг 1 - Составляем направление.")

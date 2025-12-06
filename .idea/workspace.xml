@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="finished train">
+    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="fix train carriage indices in print">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/train/classes/Carriage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/train/classes/City.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/train/classes/Route.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/train/classes/Train.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/train/common/constants.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/train/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/train/task1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/train/train.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1765015907477</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fix train carriage indices in print">
+      <created>1765021693776</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1765021693776</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -278,6 +291,7 @@
     <MESSAGE value="fix task3 in arrays, kotlin version difference" />
     <MESSAGE value="start train" />
     <MESSAGE value="finished train" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished train" />
+    <MESSAGE value="fix train carriage indices in print" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix train carriage indices in print" />
   </component>
 </project>
