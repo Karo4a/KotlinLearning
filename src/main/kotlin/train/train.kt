@@ -1,9 +1,10 @@
 package train
 
+import kotlin.math.min
 import kotlin.random.Random
 import kotlin.random.nextUInt
 
-private val cities = City.listOf(
+private val CITIES = City.listOf(
     "Москва",
     "Санкт-Петербург",
     "Новосибирск",
@@ -21,11 +22,11 @@ private val cities = City.listOf(
     "Краснодар"
 )
 
-private const val minPassegers = 5U
-private const val maxPassegers = 201U
+private const val MIN_PASSENGERS = 5U
+private const val MAX_PASSENGERS = 201U
 
-private const val minCarriageCapacity = 5U
-private const val maxCarriageCapacity = 25U
+private const val MIN_CARRIAGE_CAPACITY = 5U
+private const val MAX_CARRIAGE_CAPACITY = 25U
 
 data class City(val name : String) {
     companion object {
@@ -45,16 +46,19 @@ data class Route(
             var toCity : City
             do {
                 toCity = cities[Random.Default.nextInt(0, cities.size)]
-            } while (fromCity != toCity)
+            } while (fromCity == toCity)
             return Route(fromCity, toCity)
         }
+    }
+
+    fun info() : String {
+        return "${fromCity.name} -> ${toCity.name}"
     }
 }
 
 class Carriage {
-    var route = Route.random(cities)
-    val capacity = Random.Default.nextUInt(minCarriageCapacity, maxCarriageCapacity.inc())
-    var occupied = 0U
+    val capacity = Random.Default.nextUInt(MIN_CARRIAGE_CAPACITY, MAX_CARRIAGE_CAPACITY.inc())
+    private var occupied = 0U
 
     fun occupy(seats : UInt) : UInt? {
         var excess : UInt? = null
@@ -68,8 +72,29 @@ class Carriage {
         }
         return excess
     }
+
+    fun info() : String {
+        return "Пассажиры: $occupied/$capacity чел."
+    }
 }
 
 class Train {
-    val passengers = Random.Default.nextUInt(minPassegers, maxPassegers.inc())
+    val route = Route.random(CITIES)
+    val passengers = Random.Default.nextUInt(MIN_PASSENGERS, MAX_PASSENGERS.inc())
+    val carriages = emptyList<Carriage>().toMutableList()
+
+    init {
+        fillTrain()
+    }
+
+    private fun fillTrain() {
+        var passengersLeft = passengers
+        while (passengersLeft > 0U) {
+            val carriage = Carriage()
+            val passengersOccupy = min(passengersLeft, carriage.capacity)
+            passengersLeft -= passengersOccupy
+            carriage.occupy(passengersOccupy)
+            carriages.add(carriage)
+        }
+    }
 }

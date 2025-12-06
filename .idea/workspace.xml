@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes/Circle.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes/Point2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes/Triangle.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/train/task1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/train/train.kt" afterDir="false" />
+    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="start train">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/classes.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/functions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/classes_intro/task5.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/topics.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/train/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/train/task1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/train/train.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/train/train.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1763803881381</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="start train">
+      <created>1764420692658</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1764420692658</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -275,6 +271,7 @@
     <MESSAGE value="finish task2 in classes_intro&#10;some fixes" />
     <MESSAGE value="finish task3 in classes_intro&#10;add predicates to functions in classes_intro" />
     <MESSAGE value="fix task3 in arrays, kotlin version difference" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix task3 in arrays, kotlin version difference" />
+    <MESSAGE value="start train" />
+    <option name="LAST_COMMIT_MESSAGE" value="start train" />
   </component>
 </project>
