@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="refactor structure of train">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pizzeria_chain/task1.kt" afterDir="false" />
+    <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="add empty task pizzeria_chain">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/topics.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/topics.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pizzeria_chain/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pizzeria_chain/task1.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
