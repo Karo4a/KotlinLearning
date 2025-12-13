@@ -42,34 +42,22 @@ private fun selectPizza(currentPizzeriaCity: AbstractPizzeriaCity) {
     println("4. Тирольская пицца")
     println("0. Показать статистику")
 
-    when (readln()) { // pizza
-        "1" -> {
-            currentPizzeriaCity.neapolitanPizzaSale()
-            selectAddService(currentPizzeriaCity)
-        }
-        "2" -> {
-            currentPizzeriaCity.romanPizzaSale()
-            selectAddService(currentPizzeriaCity)
-        }
-        "3" -> {
-            currentPizzeriaCity.sicilianPizzaSale()
-            selectAddService(currentPizzeriaCity)
-        }
-        "4" -> {
-            currentPizzeriaCity.tyroleanPizzaSale()
-            selectAddService(currentPizzeriaCity)
-        }
-        "0" -> currentPizzeriaCity.showStatistics()
-        else -> {
-            println("Неправильный выбор пиццы!")
-            return
-        }
+    val choice = readln()
+    val pizza = Pizzas.byIndex[choice.toIntOrNull()]
+    if (pizza != null) {
+        currentPizzeriaCity.pizzaSale(pizza)
+    }
+
+    if (choice == "0") {
+        currentPizzeriaCity.showStatistics()
     }
 }
 
 private fun selectAddService(currentPizzeriaCity: AbstractPizzeriaCity) {
-    when (currentPizzeriaCity) {
-        is ICheckPhoto -> currentPizzeriaCity.showCheckPhoto()
-        is IDrink -> currentPizzeriaCity.drinkSale()
+    if (currentPizzeriaCity is ICheckPhoto) {
+        currentPizzeriaCity.showCheckPhoto()
+    }
+    if (currentPizzeriaCity is IDrink) {
+        currentPizzeriaCity.drinkSale()
     }
 }

@@ -22,39 +22,22 @@ class PizzeriaMoscow (
         }
     }
 
-    override fun neapolitanPizzaSale() {
-        neapolitanPizzaCount++
-        println("Спасибо за покупку неаполитанской пиццы в городе $cityName")
-    }
-
-    override fun romanPizzaSale() {
-        romanPizzaCount++
-        println("Спасибо за покупку римской пиццы в $cityName")
-    }
-
-    override fun sicilianPizzaSale() {
-        sicilianPizzaCount++
-        println("Спасибо за покупку сицилийской пиццы в $cityName")
-    }
-
-    override fun tyroleanPizzaSale() {
-        tyroleanPizzaCount++
-        println("Спасибо за покупку тирольской пиццы в $cityName")
+    override fun pizzaSale(pizza : Pizza) {
+        super.pizzaSale(pizza)
+        println("Спасибо за покупку пиццы: ${Pizzas.ruNameByPizza[pizza]}, в городе $cityName")
     }
 
     override fun showStatistics() {
-        println("Продано сицилийской пиццы: $sicilianPizzaCount")
-        println("Продано неаполитанской пиццы: $neapolitanPizzaCount")
-        println("Продано римской пиццы: $romanPizzaCount")
-        println("Продано тирольской пиццы: $tyroleanPizzaCount")
+        var money = 0.0
+        for (pizza in Pizzas.list) {
+            money += pizzasPrice[pizza.name]!! * pizzasCount[pizza.name]!!
+            println("Продано пиццы: ${Pizzas.ruNameByPizza[pizza]} = ${pizzasCount[pizza.name]}")
+        }
 
         val discount = checkPhotoCount * checkPhotoDiscount
-        val money = neapolitanPizzaCount * neapolitanPizzaPrice
-            + romanPizzaCount * romanPizzaPrice
-            + sicilianPizzaCount * sicilianPizzaPrice
-            + tyroleanPizzaCount * tyroleanPizzaPrice - discount
+        money -= discount
 
-        print("Скидка $discount")
+        println("Скидка: $discount")
         println("Всего заработано денег: $money")
     }
 }
