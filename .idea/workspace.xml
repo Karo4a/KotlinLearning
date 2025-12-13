@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="063bf3a4-5918-48a4-bedc-02ee0c63c673" name="Changes" comment="add empty task pizzeria_chain">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pizzeria_chain/classes/AbstractPizzeriaCity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pizzeria_chain/classes/ICheckPhoto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pizzeria_chain/classes/IDrink.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pizzeria_chain/classes/PizzeriaMoscow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/pizzeria_chain/classes/PizzeriaPeter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/pizzeria_chain/task1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pizzeria_chain/task1.kt" afterDir="false" />
     </list>
@@ -17,8 +22,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -267,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1765022314985</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add empty task pizzeria_chain">
+      <created>1765023998358</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1765023998358</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -294,6 +307,7 @@
     <MESSAGE value="finished train" />
     <MESSAGE value="fix train carriage indices in print" />
     <MESSAGE value="refactor structure of train" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor structure of train" />
+    <MESSAGE value="add empty task pizzeria_chain" />
+    <option name="LAST_COMMIT_MESSAGE" value="add empty task pizzeria_chain" />
   </component>
 </project>
