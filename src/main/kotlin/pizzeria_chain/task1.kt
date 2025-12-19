@@ -30,11 +30,14 @@ fun task1() {
             }
         }
 
-        selectPizza(currentPizzeriaCity)
+        val soldPizza = salePizza(currentPizzeriaCity)
+        if (soldPizza != null) {
+            selectAddService(currentPizzeriaCity, soldPizza)
+        }
     }
 }
 
-private fun selectPizza(currentPizzeriaCity: AbstractPizzeriaCity) {
+private fun salePizza(currentPizzeriaCity: AbstractPizzeriaCity) : Pizza? {
     println("Выберите пиццу:")
     println("1. Неаполитанская пицца")
     println("2. Римская пицца")
@@ -46,18 +49,20 @@ private fun selectPizza(currentPizzeriaCity: AbstractPizzeriaCity) {
     val pizza = Pizzas.byIndex[choice.toIntOrNull()]
     if (pizza != null) {
         currentPizzeriaCity.pizzaSale(pizza)
+        return pizza
     }
 
     if (choice == "0") {
         currentPizzeriaCity.showStatistics()
     }
+    return null
 }
 
-private fun selectAddService(currentPizzeriaCity: AbstractPizzeriaCity) {
+private fun selectAddService(currentPizzeriaCity: AbstractPizzeriaCity, pizza: Pizza) {
     if (currentPizzeriaCity is ICheckPhoto) {
         currentPizzeriaCity.showCheckPhoto()
     }
     if (currentPizzeriaCity is IDrink) {
-        currentPizzeriaCity.drinkSale()
+        currentPizzeriaCity.drinkSale(pizza)
     }
 }

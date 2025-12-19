@@ -24,7 +24,7 @@ class PizzeriaMoscow (
 
     override fun pizzaSale(pizza : Pizza) {
         super.pizzaSale(pizza)
-        println("Спасибо за покупку пиццы: ${Pizzas.ruNameByPizza[pizza]}, в городе $cityName")
+        println("Спасибо за покупку пиццы: ${Pizzas.ruNameByPizza[pizza]}, - в городе $cityName")
     }
 
     override fun showStatistics() {
@@ -39,5 +39,9 @@ class PizzeriaMoscow (
 
         println("Скидка: $discount")
         println("Всего заработано денег: $money")
+        if (pizzeriaCustomerCount > 0) {
+            println("${checkPhotoCount/pizzeriaCustomerCount}% людей показывают фотографию чека.")
+        }
+        println()
     }
 }

@@ -1,13 +1,13 @@
 package pizzeria_chain.classes
 
-class PizzeriaPeter (
+class PizzeriaKazan (
     neapolitanPizzaPrice: Double, romanPizzaPrice: Double,
     sicilianPizzaPrice: Double, tyroleanPizzaPrice: Double
 ) : AbstractPizzeriaCity(
     neapolitanPizzaPrice, romanPizzaPrice,
     sicilianPizzaPrice, tyroleanPizzaPrice
-), IDrink {
-    override val cityName = "Санкт-Петербург"
+), IDrink, ICheckPhoto {
+    override val cityName = "Казань"
 
     override val drinkSalePrice = 200.0
     override var drinkSaleCount = mapOf(
@@ -16,6 +16,19 @@ class PizzeriaPeter (
         Pizzas.Sicilian.name to 0,
         Pizzas.Tyrolean.name to 0,
     ).toMutableMap()
+
+    override val checkPhotoDiscount = 50.0
+    override var checkPhotoCount = 0
+
+    override fun showCheckPhoto() {
+        println("У вас есть фотография чека?")
+        println("1. Да")
+        println("2. Нет")
+        if (readln() == "1") {
+            println("Вам будет скидка $checkPhotoDiscount рублей с покупки")
+            checkPhotoCount++
+        }
+    }
 
     override fun drinkSale(pizza: Pizza) {
         println("Вы будете кофе?")
@@ -42,18 +55,24 @@ class PizzeriaPeter (
 
         val soldDrinksCount = drinkSaleCount.values.sum()
         val moneyFromDrink = soldDrinksCount * drinkSalePrice
-        money += moneyFromDrink
+        val moneyFromSauce = 0
+        val discount = checkPhotoCount * checkPhotoDiscount
+        money += moneyFromDrink + moneyFromSauce - discount
 
         println("Заработано денег с напитков: $moneyFromDrink")
+        println("Заработано денег с соусов: $moneyFromSauce")
+        println("Скидка: $discount")
         println("Всего заработано денег: $money")
         if (pizzeriaCustomerCount > 0) {
             println("${soldDrinksCount/pizzeriaCustomerCount}% людей покупают напитки.")
+        }
+        if (pizzeriaCustomerCount > 0) {
+            println("${checkPhotoCount/pizzeriaCustomerCount}% людей показывают фотографию чека.")
         }
         if (soldDrinksCount > 0) {
             val maxPizzasDrinksBuy = drinkSaleCount.maxBy {it.value}
             println("К пицце: ${maxPizzasDrinksBuy.key}, - купили больше всего напитков.")
             println("А именно - ${maxPizzasDrinksBuy.value}, что составляет ${maxPizzasDrinksBuy.value/soldDrinksCount}% от всех проданных напитков к пиццам.")
         }
-        println()
     }
 }

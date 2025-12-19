@@ -18,12 +18,14 @@ abstract class AbstractPizzeriaCity (
         Pizzas.Roman.name to 0,
         Pizzas.Sicilian.name to 0,
         Pizzas.Tyrolean.name to 0,
-    )
+    ).toMutableMap()
 
     protected abstract val cityName : String
 
     open fun pizzaSale(pizza: Pizza) {
-        pizzasCount[pizza.name]?.inc()
+        val current = pizzasCount.getOrDefault(pizza.name, 0)
+        pizzasCount[pizza.name] = current + 1
+        pizzeriaCustomerCount++
     }
 
     abstract fun showStatistics()
