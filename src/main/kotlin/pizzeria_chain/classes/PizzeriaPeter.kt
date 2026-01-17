@@ -47,12 +47,12 @@ class PizzeriaPeter (
         println("Заработано денег с напитков: $moneyFromDrink")
         println("Всего заработано денег: $money")
         if (pizzeriaCustomerCount > 0) {
-            println("${soldDrinksCount/pizzeriaCustomerCount}% людей покупают напитки.")
+            println("${soldDrinksCount*100/pizzeriaCustomerCount}% людей покупают напитки.")
         }
         if (soldDrinksCount > 0) {
             val maxPizzasDrinksBuy = drinkSaleCount.maxBy {it.value}
-            println("К пицце: ${maxPizzasDrinksBuy.key}, - купили больше всего напитков.")
-            println("А именно - ${maxPizzasDrinksBuy.value}, что составляет ${maxPizzasDrinksBuy.value/soldDrinksCount}% от всех проданных напитков к пиццам.")
+            println("К пицце: ${Pizzas.ruNameByPizza[Pizzas.byName[maxPizzasDrinksBuy.key]]}, - купили больше всего напитков.")
+            println("А именно - ${maxPizzasDrinksBuy.value}, что составляет ${maxPizzasDrinksBuy.value*100/soldDrinksCount}% от всех проданных напитков к пиццам.")
         }
         println()
     }

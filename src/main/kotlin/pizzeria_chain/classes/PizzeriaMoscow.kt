@@ -39,8 +39,9 @@ class PizzeriaMoscow (
 
         println("Скидка: $discount")
         println("Всего заработано денег: $money")
+        println("$checkPhotoCount $pizzeriaCustomerCount")
         if (pizzeriaCustomerCount > 0) {
-            println("${checkPhotoCount/pizzeriaCustomerCount}% людей показывают фотографию чека.")
+            println("${checkPhotoCount*100/pizzeriaCustomerCount}% людей показывают фотографию чека.")
         }
         println()
     }
